@@ -1,0 +1,9 @@
+# compiled output
+/client/dist
+/client/tmp
+/client/out-tsc
+
+# dependencies
+/client/node_modules
+
+/api/__pycache__
