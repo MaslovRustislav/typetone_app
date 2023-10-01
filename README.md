@@ -12,7 +12,6 @@
   - [Installing Node.js 20](#installing-nodejs-16)
   - [Running the Docker Container](#running-the-docker-container)
 - [Usage](#usage)
-- [License](#license)
 
 ### Prerequisites
 
