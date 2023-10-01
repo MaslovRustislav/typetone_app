@@ -3,7 +3,6 @@ import openai
 from dotenv import load_dotenv
 
 load_dotenv()
-print('os.getenv',os.environ)
 async def getGPTAnswear(prompt) :
     openai.organization = "org-f0uXIXckWHqd0B6ss1rrOq9b"
     openai.api_key = os.getenv('GPT_API_KEY')
