@@ -5,6 +5,7 @@ export default {
     return defineRoutes((route) => {
       route("/", "home.tsx", { index: true });
       route("templates", "templates/index.tsx");
+
     });
   },
   // appDirectory: "app",

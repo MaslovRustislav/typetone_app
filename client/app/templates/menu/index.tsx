@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import type { FunctionComponent } from "react";
 
+
+import { contentItems } from "./constant";
 const TemplatesMenu: FunctionComponent = () => {
   const [isOpenContent, setIsOpenContent] = useState<boolean>(false);
   return (
-    <div className="shrink w-[20%] h-full ">
-      <div className="bg-white flex flex-col  py-6 px-4  justify-start rounded-xl h-full">
+    <div className="shrink w-[20%] max_md:w-full h-full ">
+      <div className="bg-white flex flex-col    py-6 px-4  justify-start rounded-xl h-full">
         <div className="flex rounded-lg border my-8 border-neutral-300 focus-within:border-primary-300 h-min cursor-text shadow-sm space-x-2 text-neutral-800 placeholder:text-neutral-500 bg-white px-3.5 py-2.5  ">
           <svg
             width="20"
@@ -32,7 +34,6 @@ const TemplatesMenu: FunctionComponent = () => {
             className="outline-none w-full bg-transparent"
           ></input>
         </div>
-        <div className="flex h-12 rounded-lg border border-neutral-300 focus-within:border-primary-300  cursor-default relative shadow-sm space-x-2 text-neutral-800 placeholder:text-neutral-500 bg-white px-3.5 select-none py-2.5"></div>
         <div
           onClick={() => {
             setIsOpenContent(!isOpenContent);
@@ -61,13 +62,14 @@ const TemplatesMenu: FunctionComponent = () => {
             </svg>
           </div>
         </div>
-        {isOpenContent && (
-          <div className="transition-all space-y-1">
-            <div className="rounded-lg cursor-pointer flex items-center py-1.5 pl-5 pr-6 space-x-2 text-neutral-900  transition-all duration-200    hover:bg-primary-50">
-              <div className="text-ellipsis overflow-hidden">Summary</div>
+        {isOpenContent &&
+          contentItems.map((contentItem) => (
+            <div className="transition-all space-y-1">
+              <div className="rounded-lg cursor-pointer flex items-center py-1.5 pl-5 pr-6 space-x-2 text-neutral-900  transition-all duration-200    hover:bg-primary-50">
+                <div className="text-ellipsis overflow-hidden">{contentItem.name}</div>
+              </div>
             </div>
-          </div>
-        )}
+          ))}
       </div>
     </div>
   );

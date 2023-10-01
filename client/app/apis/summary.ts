@@ -1,17 +1,26 @@
-import Axios from "axios";
+import Axios, { AxiosError } from "axios";
 
 const postFile = async (
   file: File,
   setGPTSummary: (value: string) => void,
-  setLoading: (value: boolean) => void
+  setLoading: (value: boolean) => void,
+  showToast: (vlaue: string, value: "success" | "error" | "info") => void
 ) => {
   setLoading(true);
-  console.log("is it called??", file);
   const formData = new FormData();
-  formData.append("pdf_file", file);
-  const response = await Axios.post("http://localhost:8000/summary", formData);
+  formData.append("pdfFile", file);
+  let response;
+  try {
+    response = await Axios.post("http://localhost:8000/summary", formData);
+    setGPTSummary(response.data);
+  } catch (e: unknown) {
+    if (e instanceof AxiosError) {
+      showToast(e.response?.data?.detail || e.message, "error");
+    }
+    setLoading(false);
+    return;
+  }
 
-  setGPTSummary(response.data);
   setLoading(false);
   return response.data;
 };

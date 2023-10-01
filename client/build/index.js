@@ -123,7 +123,7 @@ import { createContext, useState } from "react";
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-H6B2SRWL.css";
+var tailwind_default = "/build/_assets/tailwind-DQX4XEZR.css";
 
 // app/header.tsx
 import { NavLink } from "@remix-run/react";
@@ -290,14 +290,19 @@ var templates_exports = {};
 __export(templates_exports, {
   default: () => templates_default
 });
-import { useEffect as useEffect2, useState as useState4 } from "react";
+import { useState as useState4 } from "react";
 
 // app/templates/menu/index.tsx
 import { useState as useState2 } from "react";
+
+// app/templates/menu/constant.ts
+var contentItems = [{ name: "Summary" }];
+
+// app/templates/menu/index.tsx
 import { jsxDEV as jsxDEV5 } from "react/jsx-dev-runtime";
 var TemplatesMenu = () => {
   let [isOpenContent, setIsOpenContent] = useState2(!1);
-  return /* @__PURE__ */ jsxDEV5("div", { className: "shrink w-[20%] h-full ", children: /* @__PURE__ */ jsxDEV5("div", { className: "bg-white flex flex-col  py-6 px-4  justify-start rounded-xl h-full", children: [
+  return /* @__PURE__ */ jsxDEV5("div", { className: "shrink w-[20%] max_md:w-full h-full ", children: /* @__PURE__ */ jsxDEV5("div", { className: "bg-white flex flex-col    py-6 px-4  justify-start rounded-xl h-full", children: [
     /* @__PURE__ */ jsxDEV5("div", { className: "flex rounded-lg border my-8 border-neutral-300 focus-within:border-primary-300 h-min cursor-text shadow-sm space-x-2 text-neutral-800 placeholder:text-neutral-500 bg-white px-3.5 py-2.5  ", children: [
       /* @__PURE__ */ jsxDEV5(
         "svg",
@@ -320,7 +325,7 @@ var TemplatesMenu = () => {
               !1,
               {
                 fileName: "app/templates/menu/index.tsx",
-                lineNumber: 17,
+                lineNumber: 19,
                 columnNumber: 13
               },
               this
@@ -337,7 +342,7 @@ var TemplatesMenu = () => {
               !1,
               {
                 fileName: "app/templates/menu/index.tsx",
-                lineNumber: 23,
+                lineNumber: 25,
                 columnNumber: 13
               },
               this
@@ -348,7 +353,7 @@ var TemplatesMenu = () => {
         !0,
         {
           fileName: "app/templates/menu/index.tsx",
-          lineNumber: 10,
+          lineNumber: 12,
           columnNumber: 11
         },
         this
@@ -363,19 +368,14 @@ var TemplatesMenu = () => {
         !1,
         {
           fileName: "app/templates/menu/index.tsx",
-          lineNumber: 30,
+          lineNumber: 32,
           columnNumber: 11
         },
         this
       )
     ] }, void 0, !0, {
       fileName: "app/templates/menu/index.tsx",
-      lineNumber: 9,
-      columnNumber: 9
-    }, this),
-    /* @__PURE__ */ jsxDEV5("div", { className: "flex h-12 rounded-lg border border-neutral-300 focus-within:border-primary-300  cursor-default relative shadow-sm space-x-2 text-neutral-800 placeholder:text-neutral-500 bg-white px-3.5 select-none py-2.5" }, void 0, !1, {
-      fileName: "app/templates/menu/index.tsx",
-      lineNumber: 35,
+      lineNumber: 11,
       columnNumber: 9
     }, this),
     /* @__PURE__ */ jsxDEV5(
@@ -388,7 +388,7 @@ var TemplatesMenu = () => {
         children: [
           /* @__PURE__ */ jsxDEV5("div", { className: " text-base text-neutral-500 font-medium", children: "Content" }, void 0, !1, {
             fileName: "app/templates/menu/index.tsx",
-            lineNumber: 42,
+            lineNumber: 43,
             columnNumber: 11
           }, this),
           /* @__PURE__ */ jsxDEV5(
@@ -415,7 +415,7 @@ var TemplatesMenu = () => {
                     !1,
                     {
                       fileName: "app/templates/menu/index.tsx",
-                      lineNumber: 55,
+                      lineNumber: 56,
                       columnNumber: 15
                     },
                     this
@@ -425,7 +425,7 @@ var TemplatesMenu = () => {
                 !1,
                 {
                   fileName: "app/templates/menu/index.tsx",
-                  lineNumber: 48,
+                  lineNumber: 49,
                   columnNumber: 13
                 },
                 this
@@ -435,7 +435,7 @@ var TemplatesMenu = () => {
             !1,
             {
               fileName: "app/templates/menu/index.tsx",
-              lineNumber: 43,
+              lineNumber: 44,
               columnNumber: 11
             },
             this
@@ -446,36 +446,36 @@ var TemplatesMenu = () => {
       !0,
       {
         fileName: "app/templates/menu/index.tsx",
-        lineNumber: 36,
+        lineNumber: 37,
         columnNumber: 9
       },
       this
     ),
-    isOpenContent && /* @__PURE__ */ jsxDEV5("div", { className: "transition-all space-y-1", children: /* @__PURE__ */ jsxDEV5("div", { className: "rounded-lg cursor-pointer flex items-center py-1.5 pl-5 pr-6 space-x-2 text-neutral-900  transition-all duration-200    hover:bg-primary-50", children: /* @__PURE__ */ jsxDEV5("div", { className: "text-ellipsis overflow-hidden", children: "Summary" }, void 0, !1, {
+    isOpenContent && contentItems.map((contentItem) => /* @__PURE__ */ jsxDEV5("div", { className: "transition-all space-y-1", children: /* @__PURE__ */ jsxDEV5("div", { className: "rounded-lg cursor-pointer flex items-center py-1.5 pl-5 pr-6 space-x-2 text-neutral-900  transition-all duration-200    hover:bg-primary-50", children: /* @__PURE__ */ jsxDEV5("div", { className: "text-ellipsis overflow-hidden", children: contentItem.name }, void 0, !1, {
       fileName: "app/templates/menu/index.tsx",
-      lineNumber: 67,
+      lineNumber: 69,
+      columnNumber: 17
+    }, this) }, void 0, !1, {
+      fileName: "app/templates/menu/index.tsx",
+      lineNumber: 68,
       columnNumber: 15
     }, this) }, void 0, !1, {
       fileName: "app/templates/menu/index.tsx",
-      lineNumber: 66,
+      lineNumber: 67,
       columnNumber: 13
-    }, this) }, void 0, !1, {
-      fileName: "app/templates/menu/index.tsx",
-      lineNumber: 65,
-      columnNumber: 11
-    }, this)
+    }, this))
   ] }, void 0, !0, {
     fileName: "app/templates/menu/index.tsx",
-    lineNumber: 8,
+    lineNumber: 10,
     columnNumber: 7
   }, this) }, void 0, !1, {
     fileName: "app/templates/menu/index.tsx",
-    lineNumber: 7,
+    lineNumber: 9,
     columnNumber: 5
   }, this);
 }, menu_default = TemplatesMenu;
 
-// app/templates/dropZone/index.tsx
+// app/templates/summary/dropZone/index.tsx
 import { useCallback, useState as useState3, useRef, useContext } from "react";
 
 // app/common/toaster.tsx
@@ -535,16 +535,22 @@ var Toaster = ({ toasts, removeToast }) => (useEffect(() => {
 }, this)), toaster_default = Toaster;
 
 // app/apis/summary.ts
-import Axios from "axios";
-var postFile = async (file, setGPTSummary, setLoading) => {
+import Axios, { AxiosError } from "axios";
+var postFile = async (file, setGPTSummary, setLoading, showToast) => {
   setLoading(!0), console.log("is it called??", file);
   let formData = new FormData();
-  formData.append("pdf_file", file);
-  let response = await Axios.post("http://localhost:8000/summary", formData);
-  return setGPTSummary(response.data), setLoading(!1), response.data;
+  formData.append("pdfFile", file);
+  let response;
+  try {
+    response = await Axios.post("http://localhost:8000/summary", formData), setGPTSummary(response.data);
+  } catch (e) {
+    console.log("An error occured", e), e instanceof AxiosError && showToast(e.response?.data?.detail || e.message, "error"), setLoading(!1);
+    return;
+  }
+  return setLoading(!1), response.data;
 }, summary_default = postFile;
 
-// app/templates/dropZone/index.tsx
+// app/templates/summary/dropZone/index.tsx
 import { jsxDEV as jsxDEV7 } from "react/jsx-dev-runtime";
 var DropZone = ({ setGPTSummary }) => {
   let { setLoading } = useContext(SummaryContext), [documents, setDocuments] = useState3([]), [isDragOver, setIsDragOver] = useState3(!1), [toasts, setToasts] = useState3([]), fileInputRef = useRef(null), showToast = (message, type) => {
@@ -560,18 +566,34 @@ var DropZone = ({ setGPTSummary }) => {
     (e) => {
       e.preventDefault(), setIsDragOver(!1);
       let droppedFiles = e.dataTransfer.files, pdfFiles = Array.from(droppedFiles).filter(isPdfFile);
-      if (console.log("selectedFiles on click", droppedFiles), pdfFiles.length > 0 && pdfFiles[0].size < 1e5) {
+      if (console.log("selectedFiles on click", droppedFiles), pdfFiles.length > 0) {
         let file = pdfFiles[0], fileNames = pdfFiles.map((file2) => file2.name);
-        setDocuments([...documents, ...fileNames]), summary_default(file, setGPTSummary, setLoading);
+        setDocuments(fileNames), summary_default(file, setGPTSummary, setLoading, showToast);
       } else
         showToast("Please select only PDF files.", "error");
     },
     [documents, setGPTSummary, setLoading]
-  );
-  return /* @__PURE__ */ jsxDEV7("div", { className: "bg-white flex flex-col w-2/4  p-4.5 space-y-6 justify-start rounded-xl h-full", children: [
+  ), openFileDialog = () => {
+    fileInputRef.current && fileInputRef.current.click();
+  }, onFileInputChange = (e) => {
+    let selectedFiles = e.target.files;
+    if (selectedFiles) {
+      let pdfFiles = Array.from(selectedFiles).filter(isPdfFile);
+      if (pdfFiles.length > 0) {
+        let file = pdfFiles[0], fileNames = pdfFiles.map((file2) => file2.name);
+        setDocuments(fileNames), summary_default(file, setGPTSummary, setLoading, showToast);
+      } else
+        showToast("Please select only PDF files.", "error");
+    }
+  }, onDragOver = (e) => {
+    e.preventDefault();
+  }, handleDeleteClick = (e) => {
+    e.stopPropagation(), setDocuments([]), setGPTSummary("");
+  };
+  return /* @__PURE__ */ jsxDEV7("div", { className: "bg-white flex flex-col w-2/4 max_md:w-full  p-4.5 space-y-6 justify-start rounded-xl h-full", children: [
     /* @__PURE__ */ jsxDEV7(toaster_default, { toasts, removeToast }, void 0, !1, {
-      fileName: "app/templates/dropZone/index.tsx",
-      lineNumber: 83,
+      fileName: "app/templates/summary/dropZone/index.tsx",
+      lineNumber: 87,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV7("div", { className: "min-h-full flex items-center justify-center ", children: /* @__PURE__ */ jsxDEV7("div", { className: "max-w-md w-full p-4", children: /* @__PURE__ */ jsxDEV7(
@@ -584,13 +606,9 @@ var DropZone = ({ setGPTSummary }) => {
         onDragEnter: () => {
           setIsDragOver(!0);
         },
-        onDragOver: (e) => {
-          e.preventDefault();
-        },
+        onDragOver,
         onDrop,
-        onClick: () => {
-          fileInputRef.current && fileInputRef.current.click();
-        },
+        onClick: openFileDialog,
         children: [
           /* @__PURE__ */ jsxDEV7(
             "input",
@@ -598,50 +616,56 @@ var DropZone = ({ setGPTSummary }) => {
               type: "file",
               ref: fileInputRef,
               style: { display: "none" },
-              onChange: (e) => {
-                let selectedFiles = e.target.files;
-                if (console.log("selectedFiles", selectedFiles), selectedFiles) {
-                  let pdfFiles = Array.from(selectedFiles).filter(isPdfFile);
-                  if (pdfFiles.length > 0) {
-                    let file = pdfFiles[0], fileNames = pdfFiles.map((file2) => file2.name);
-                    setDocuments([...documents, ...fileNames]), summary_default(file, setGPTSummary, setLoading);
-                  } else
-                    alert("Please select only PDF files.");
-                }
-              },
+              onChange: onFileInputChange,
               accept: ".pdf"
             },
             void 0,
             !1,
             {
-              fileName: "app/templates/dropZone/index.tsx",
-              lineNumber: 103,
+              fileName: "app/templates/summary/dropZone/index.tsx",
+              lineNumber: 107,
               columnNumber: 13
             },
             this
           ),
           documents.length === 0 ? !isDragOver && /* @__PURE__ */ jsxDEV7("p", { className: "text-gray-400", children: "Drag 'n' drop PDF files here, or click to select PDF files" }, void 0, !1, {
-            fileName: "app/templates/dropZone/index.tsx",
-            lineNumber: 112,
+            fileName: "app/templates/summary/dropZone/index.tsx",
+            lineNumber: 116,
             columnNumber: 17
           }, this) : /* @__PURE__ */ jsxDEV7("div", { children: [
             /* @__PURE__ */ jsxDEV7("p", { className: "text-green-500", children: "PDF document added:" }, void 0, !1, {
-              fileName: "app/templates/dropZone/index.tsx",
-              lineNumber: 118,
+              fileName: "app/templates/summary/dropZone/index.tsx",
+              lineNumber: 122,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ jsxDEV7("ul", { className: "text-gray-400", children: documents.map((document, index) => /* @__PURE__ */ jsxDEV7("li", { children: document }, index, !1, {
-              fileName: "app/templates/dropZone/index.tsx",
-              lineNumber: 121,
+              fileName: "app/templates/summary/dropZone/index.tsx",
+              lineNumber: 125,
               columnNumber: 21
             }, this)) }, void 0, !1, {
-              fileName: "app/templates/dropZone/index.tsx",
-              lineNumber: 119,
+              fileName: "app/templates/summary/dropZone/index.tsx",
+              lineNumber: 123,
               columnNumber: 17
-            }, this)
+            }, this),
+            /* @__PURE__ */ jsxDEV7(
+              "button",
+              {
+                className: "text-red-500 hover:text-red-700 cursor-pointer",
+                onClick: handleDeleteClick,
+                children: "Delete"
+              },
+              void 0,
+              !1,
+              {
+                fileName: "app/templates/summary/dropZone/index.tsx",
+                lineNumber: 128,
+                columnNumber: 17
+              },
+              this
+            )
           ] }, void 0, !0, {
-            fileName: "app/templates/dropZone/index.tsx",
-            lineNumber: 117,
+            fileName: "app/templates/summary/dropZone/index.tsx",
+            lineNumber: 121,
             columnNumber: 15
           }, this)
         ]
@@ -649,29 +673,36 @@ var DropZone = ({ setGPTSummary }) => {
       void 0,
       !0,
       {
-        fileName: "app/templates/dropZone/index.tsx",
-        lineNumber: 87,
+        fileName: "app/templates/summary/dropZone/index.tsx",
+        lineNumber: 91,
         columnNumber: 11
       },
       this
     ) }, void 0, !1, {
-      fileName: "app/templates/dropZone/index.tsx",
-      lineNumber: 86,
+      fileName: "app/templates/summary/dropZone/index.tsx",
+      lineNumber: 90,
       columnNumber: 9
     }, this) }, void 0, !1, {
-      fileName: "app/templates/dropZone/index.tsx",
-      lineNumber: 85,
+      fileName: "app/templates/summary/dropZone/index.tsx",
+      lineNumber: 89,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
-    fileName: "app/templates/dropZone/index.tsx",
-    lineNumber: 82,
+    fileName: "app/templates/summary/dropZone/index.tsx",
+    lineNumber: 86,
     columnNumber: 5
   }, this);
 }, dropZone_default = DropZone;
 
 // app/templates/summary/index.tsx
 import { useContext as useContext2 } from "react";
+
+// app/common/styleSummaryt.ts
+function styleSummary(summary) {
+  return summary.split(". ").join(`.
+
+`);
+}
 
 // app/common/loadert.tsx
 import { jsxDEV as jsxDEV8 } from "react/jsx-dev-runtime";
@@ -716,7 +747,7 @@ var Loader = () => /* @__PURE__ */ jsxDEV8("div", { className: "flex items-cente
 import { Fragment, jsxDEV as jsxDEV9 } from "react/jsx-dev-runtime";
 var SummaryZone = ({ GPTSummary }) => {
   let { loading } = useContext2(SummaryContext);
-  return console.log("value", loading), /* @__PURE__ */ jsxDEV9("div", { className: "bg-white flex flex-col w-2/4  p-4 space-y-6 justify-start rounded-xl h-full", children: /* @__PURE__ */ jsxDEV9("div", { className: "bg-white flex flex-col  p-4.5 space-y-6 justify-start rounded-xl grow h-full w-full ", children: [
+  return /* @__PURE__ */ jsxDEV9("div", { className: "bg-white flex flex-col w-2/4  max_md:w-full p-4 space-y-6 justify-start rounded-xl h-full", children: /* @__PURE__ */ jsxDEV9("div", { className: "bg-white flex flex-col  p-4.5 space-y-6 justify-start rounded-xl grow h-full w-full ", children: [
     /* @__PURE__ */ jsxDEV9("div", { className: "pt-3 pb-5 border-b border-neutral-200 ", children: /* @__PURE__ */ jsxDEV9("span", { className: " p-1 rounded-md border border-white text-2xl font-semibold text-neutral-900 outline-none bg-white min-w-0", children: "Document" }, void 0, !1, {
       fileName: "app/templates/summary/index.tsx",
       lineNumber: 14,
@@ -729,52 +760,44 @@ var SummaryZone = ({ GPTSummary }) => {
     /* @__PURE__ */ jsxDEV9(
       "div",
       {
-        className: `space-y-4 grow flex flex-col  items-center ${GPTSummary.length ? "" : " justify-center"} h-full w-full`,
-        children: GPTSummary.length && !loading ? (
-          // <div
-          //   dangerouslySetInnerHTML={{ __html: GPTSummary }}
-          // />
-          /* @__PURE__ */ jsxDEV9("div", { className: "text-left font-normal text-base whitespace-pre-wrap text-neutral-600", children: [
-            " ",
-            prettingSummary(GPTSummary)
-          ] }, void 0, !0, {
-            fileName: "app/templates/summary/index.tsx",
-            lineNumber: 27,
-            columnNumber: 13
-          }, this)
-        ) : /* @__PURE__ */ jsxDEV9(Fragment, { children: loading ? /* @__PURE__ */ jsxDEV9(loadert_default, {}, void 0, !1, {
+        className: `space-y-4 overflow-y-auto grow flex flex-col  items-center ${GPTSummary.length ? "" : " justify-center"} h-full w-full`,
+        children: GPTSummary.length && !loading ? /* @__PURE__ */ jsxDEV9("div", { className: "text-left font-normal text-base whitespace-pre-wrap text-neutral-600", children: styleSummary(GPTSummary) }, void 0, !1, {
           fileName: "app/templates/summary/index.tsx",
-          lineNumber: 34,
+          lineNumber: 24,
+          columnNumber: 13
+        }, this) : /* @__PURE__ */ jsxDEV9(Fragment, { children: loading ? /* @__PURE__ */ jsxDEV9(loadert_default, {}, void 0, !1, {
+          fileName: "app/templates/summary/index.tsx",
+          lineNumber: 30,
           columnNumber: 17
         }, this) : /* @__PURE__ */ jsxDEV9(Fragment, { children: [
           /* @__PURE__ */ jsxDEV9("div", { className: "text-center font-semibold text-xl text-neutral-900", children: "Your summary of the document will be shown here" }, void 0, !1, {
             fileName: "app/templates/summary/index.tsx",
-            lineNumber: 37,
+            lineNumber: 33,
             columnNumber: 19
           }, this),
           /* @__PURE__ */ jsxDEV9("div", { className: "text-center font-normal text-base text-neutral-400", children: [
             /* @__PURE__ */ jsxDEV9("p", { children: "After you upload document ," }, void 0, !1, {
               fileName: "app/templates/summary/index.tsx",
-              lineNumber: 41,
+              lineNumber: 37,
               columnNumber: 21
             }, this),
             /* @__PURE__ */ jsxDEV9("p", { children: "the results will be shown here." }, void 0, !1, {
               fileName: "app/templates/summary/index.tsx",
-              lineNumber: 42,
+              lineNumber: 38,
               columnNumber: 21
             }, this)
           ] }, void 0, !0, {
             fileName: "app/templates/summary/index.tsx",
-            lineNumber: 40,
+            lineNumber: 36,
             columnNumber: 19
           }, this)
         ] }, void 0, !0, {
           fileName: "app/templates/summary/index.tsx",
-          lineNumber: 36,
+          lineNumber: 32,
           columnNumber: 17
         }, this) }, void 0, !1, {
           fileName: "app/templates/summary/index.tsx",
-          lineNumber: 32,
+          lineNumber: 28,
           columnNumber: 13
         }, this)
       },
@@ -796,41 +819,37 @@ var SummaryZone = ({ GPTSummary }) => {
     lineNumber: 11,
     columnNumber: 5
   }, this);
-}, summary_default2 = SummaryZone, prettingSummary = (summary) => summary.split(". ").join(`.
-
-`);
+}, summary_default2 = SummaryZone;
 
 // app/templates/index.tsx
 import { jsxDEV as jsxDEV10 } from "react/jsx-dev-runtime";
-var Templates = () => {
-  let [GPTSummary, setGPTSummary] = useState4(""), [loadingSummary, setLoadingSummary] = useState4(!1);
-  return useEffect2(() => {
-    console.log("GPTSummary", GPTSummary);
-  }, [GPTSummary]), /* @__PURE__ */ jsxDEV10("div", { className: "flex grow space-x-3 w-full h-[calc(100%_-_92px)]", children: [
+var TemplatesSummary = () => {
+  let [GPTSummary, setGPTSummary] = useState4("");
+  return /* @__PURE__ */ jsxDEV10("div", { className: "flex max_md:flex-col grow min_md:space-x-3 w-full h-[calc(100%_-_92px)]", children: [
     /* @__PURE__ */ jsxDEV10(menu_default, {}, void 0, !1, {
       fileName: "app/templates/index.tsx",
-      lineNumber: 17,
+      lineNumber: 12,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV10(dropZone_default, { setGPTSummary }, void 0, !1, {
       fileName: "app/templates/index.tsx",
-      lineNumber: 18,
+      lineNumber: 13,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV10(summary_default2, { GPTSummary, loadingSummary }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV10(summary_default2, { GPTSummary }, void 0, !1, {
       fileName: "app/templates/index.tsx",
-      lineNumber: 19,
+      lineNumber: 14,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/templates/index.tsx",
-    lineNumber: 16,
+    lineNumber: 11,
     columnNumber: 5
   }, this);
-}, templates_default = Templates;
+}, templates_default = TemplatesSummary;
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-7I5ATEZT.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-5WZCCOTE.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-JPQDRPB6.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { home: { id: "home", parentId: "root", path: "/", index: !0, caseSensitive: void 0, module: "/build/home-H6TSHG7X.js", imports: void 0, hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-RCSQWGP2.js", imports: ["/build/_shared/chunk-R4HRV4DQ.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "templates/index": { id: "templates/index", parentId: "root", path: "templates", index: void 0, caseSensitive: void 0, module: "/build/templates/index-IAFPFKXV.js", imports: void 0, hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 } }, version: "c1332f1c", hmr: { runtime: "/build/_shared/chunk-JPQDRPB6.js", timestamp: 1696091337939 }, url: "/build/manifest-C1332F1C.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-DMVXLDYW.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-47M4FSUG.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-PJOI3RHM.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { home: { id: "home", parentId: "root", path: "/", index: !0, caseSensitive: void 0, module: "/build/home-EF7UEMTF.js", imports: void 0, hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-2IPCW2BK.js", imports: ["/build/_shared/chunk-GMALEXKG.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "templates/index": { id: "templates/index", parentId: "root", path: "templates", index: void 0, caseSensitive: void 0, module: "/build/templates/index-PZC3TSQG.js", imports: void 0, hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 } }, version: "5d15644c", hmr: { runtime: "/build/_shared/chunk-PJOI3RHM.js", timestamp: 1696169888891 }, url: "/build/manifest-5D15644C.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "development", assetsBuildDirectory = "public/build", future = {}, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
