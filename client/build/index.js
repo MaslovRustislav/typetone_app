@@ -181,7 +181,7 @@ var contentItems = [{ name: "Summary" }];
 // app/templates/menu/index.tsx
 import { jsx as jsx5, jsxs as jsxs3 } from "react/jsx-runtime";
 var TemplatesMenu = () => {
-  let [isOpenContent, setIsOpenContent] = useState2(!1);
+  let [isOpenContent, setIsOpenContent] = useState2(!0);
   return /* @__PURE__ */ jsx5("div", { className: "shrink w-[20%] max_md:w-full h-full ", children: /* @__PURE__ */ jsxs3("div", { className: "bg-white flex flex-col    py-6 px-4  justify-start rounded-xl h-full", children: [
     /* @__PURE__ */ jsxs3("div", { className: "flex rounded-lg border my-8 border-neutral-300 focus-within:border-primary-300 h-min cursor-text shadow-sm space-x-2 text-neutral-800 placeholder:text-neutral-500 bg-white px-3.5 py-2.5  ", children: [
       /* @__PURE__ */ jsxs3(
@@ -450,7 +450,7 @@ var TemplatesSummary = () => {
 }, templates_default = TemplatesSummary;
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-3QWKQFE2.js", imports: ["/build/_shared/chunk-TVTI64JF.js", "/build/_shared/chunk-DWFMXSZ6.js"] }, routes: { home: { id: "home", parentId: "root", path: "/", index: !0, caseSensitive: void 0, module: "/build/home-HZP3I5MP.js", imports: void 0, hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-F2IE3VMC.js", imports: ["/build/_shared/chunk-IAYRGFUC.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "templates/index": { id: "templates/index", parentId: "root", path: "templates", index: void 0, caseSensitive: void 0, module: "/build/templates/index-FX4GDLIU.js", imports: void 0, hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 } }, version: "86133c59", hmr: void 0, url: "/build/manifest-86133C59.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-3QWKQFE2.js", imports: ["/build/_shared/chunk-TVTI64JF.js", "/build/_shared/chunk-DWFMXSZ6.js"] }, routes: { home: { id: "home", parentId: "root", path: "/", index: !0, caseSensitive: void 0, module: "/build/home-HZP3I5MP.js", imports: void 0, hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-F2IE3VMC.js", imports: ["/build/_shared/chunk-IAYRGFUC.js"], hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 }, "templates/index": { id: "templates/index", parentId: "root", path: "templates", index: void 0, caseSensitive: void 0, module: "/build/templates/index-BTU27JIS.js", imports: void 0, hasAction: !1, hasLoader: !1, hasErrorBoundary: !1 } }, version: "804b27d6", hmr: void 0, url: "/build/manifest-804B27D6.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "production", assetsBuildDirectory = "public/build", future = {}, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

@@ -4,7 +4,7 @@ import type { FunctionComponent } from "react";
 
 import { contentItems } from "./constant";
 const TemplatesMenu: FunctionComponent = () => {
-  const [isOpenContent, setIsOpenContent] = useState<boolean>(false);
+  const [isOpenContent, setIsOpenContent] = useState<boolean>(true);
   return (
     <div className="shrink w-[20%] max_md:w-full h-full ">
       <div className="bg-white flex flex-col    py-6 px-4  justify-start rounded-xl h-full">
