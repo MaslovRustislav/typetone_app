@@ -5,8 +5,9 @@
 /client/
 
 /client/node_modules
+/client/.cache
 /client/public/build
-.vscode
+/.vscode
 
 /api/__pycache__
 /api/.env
