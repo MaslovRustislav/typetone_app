@@ -1,13 +1,12 @@
-# compiled output
 /client/dist
 /client/tmp
 /client/out-tsc
 /client/build
-/client/.cache
-/client/public/build
+/client/
 
-# dependencies
 /client/node_modules
+/client/public/build
+.vscode
 
 /api/__pycache__
 /api/.env
