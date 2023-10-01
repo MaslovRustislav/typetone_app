@@ -2,9 +2,8 @@ from fastapi import FastAPI ,Form, File, UploadFile , HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from GPTApi import getGPTAnswear
 import fitz  # PyMuPDF
-
 app = FastAPI()
-MAX_FILE_SIZE = 1024 
+MAX_FILE_SIZE = 1024 * 1024
 
 origins = [
     "http://localhost:3000",
@@ -20,33 +19,31 @@ app.add_middleware(
 )
 
 @app.post("/summary", tags=["summary"])
-async def add_file(pdf_file: UploadFile = File(...)):
-    file_size = 0
+async def addFile(pdfFile: UploadFile = File(...)):
+    fileSize = 0
     while True:
-        chunk = await pdf_file.read(1024)
+        chunk = await pdfFile.read(1024)
         if not chunk:
             break
-        file_size += len(chunk)
-        if file_size > MAX_FILE_SIZE:
+        fileSize += len(chunk)
+        if fileSize > MAX_FILE_SIZE:
             raise HTTPException(status_code=400, detail="File size exceeds the maximum allowed size (1 MB)")
 
-    # Reset the file cursor back to the beginning
-    await pdf_file.seek(0)
-    def extract_text_from_pdf(pdf_file):
+    await pdfFile.seek(0)
+    def extractTextFromPdf(pdfFile):
         text = ""
-
-
         try:
-            pdf_document = fitz.open(stream=pdf_file.file.read(), filetype="pdf")
-            num_pages = len(pdf_document)
-            for page_num in range(num_pages):
-                page = pdf_document.load_page(page_num)
+            pdfDocument = fitz.open(stream=pdfFile.file.read(), filetype="pdf")
+            numPages = len(pdfDocument)
+            for pageNum in range(numPages):
+                page = pdfDocument.load_page(pageNum)
                 text += page.get_text()
         except Exception as e:
             print(f"An error occurred: {str(e)}")
         return text
 
-    extracted_text = extract_text_from_pdf(pdf_file)
-    GPTanswear = await getGPTAnswear("Write a short summary about this file" + extracted_text)
+    extractedText = extractTextFromPdf(pdfFile)
+    GPTanswear = await getGPTAnswear("Write a short summary about this file" + extractedText)
     print(GPTanswear)
     return GPTanswear
+
