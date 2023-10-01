@@ -8,7 +8,6 @@
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
   - [Cloning the Repository](#cloning-the-repository)
-  - [Setting Up Remix (Frontend)](#setting-up-remix-frontend)
   - [Setting Up Python 3.x Backend](#setting-up-python-3x-backend)
   - [Installing Node.js 20](#installing-nodejs-16)
   - [Running the Docker Container](#running-the-docker-container)
@@ -26,7 +25,6 @@ List any prerequisites the client should have installed on their machine:
 
 ### Getting Started
 
-Explain how to set up the project, including both the frontend (Remix) and backend (Python) components.
 
 #### Cloning the Repository
 
@@ -63,7 +61,7 @@ You can install Node.js 20 by downloading it from the official Node.js website: 
 
     ```bash
     export GPT_API_KEY=YOUR_OPEN_AI_API_KEY
-        docker-compose up
+    docker-compose up
     ```  
 
 ### Usage
