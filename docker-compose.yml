@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  # Front-end service
+  client:
+    image: node:20
+    working_dir: /client
+    volumes:
+      - ./client:/client
+    ports:
+      - "3000:3000"
+    command: >
+      bash -c "npm i && npm run build && npm run start"
+    # environment:
+    #   - NODE_ENV=development
+    #   - REACT_APP_API_URL=http://fastapi-be:8000  # Define your environment variable here
+
+  # Back-end service
+  fastapi-be:
+    image: python:3.10
+    working_dir: /api
+    volumes:
+      - ./api:/api
+    ports:
+      - "8000:8000"
+    command: >
+      bash -c "pip install -r requirements.txt && python3 main.py"
+    environment:
+    - GPT_API_KEY=$GPT_API_KEY
+      
+
+
+# Uncomment and configure other services if needed (e.g., database, cache, etc.)

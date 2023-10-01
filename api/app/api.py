@@ -44,6 +44,5 @@ async def addFile(pdfFile: UploadFile = File(...)):
 
     extractedText = extractTextFromPdf(pdfFile)
     GPTanswear = await getGPTAnswear("Write a short summary about this file" + extractedText)
-    print(GPTanswear)
     return GPTanswear
 
