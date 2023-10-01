@@ -4,6 +4,7 @@
 /client/out-tsc
 /client/build
 /client/.cache
+/client/public/build
 
 # dependencies
 /client/node_modules
