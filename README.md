@@ -14,6 +14,7 @@ The overall purpose of the app is to be automating the process of summarizing PD
 
 -General Use: Anyone dealing with extensive textual content can simplify their reading and comprehension tasks using this app.
 
+[![Watch the video](/client/app/assets/img/videoIMG.png)](/client/app/assets/videos/TypetoneAssignment.mov)
 
 
 ### Table of Contents
@@ -57,7 +58,7 @@ docker-compose up
 ```  
 
 3. Run the app:
-![Alt text](runnedApp.png "Optional title")
+![Alt text](/client/app/assets/img/runnedApp.png "Optional title")
 After you see the same code in CLI you can run project using this url http://localhost:3000
 
 ### Usage
