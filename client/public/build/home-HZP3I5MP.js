@@ -1,1 +1,0 @@
-import{c as e,e as t}from"/build/_shared/chunk-DWFMXSZ6.js";var o=e(t(),1),i=()=>[{title:"New Remix App"},{name:"description",content:"Welcome to Remix!"}];function n(){return(0,o.jsx)("div",{className:"w-full h-[90%] flex justify-center items-center",children:" Homepage"})}export{n as default,i as meta};
