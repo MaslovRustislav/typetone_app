@@ -15,7 +15,13 @@ const postFile = async (
     setGPTSummary(response.data);
   } catch (e: unknown) {
     if (e instanceof AxiosError) {
-      showToast(e.response?.data?.detail || e.message, "error");
+      if (e instanceof AxiosError) {
+        if (e.message === "Network Error") {
+          showToast("API key that you provided isn't valid", "error");
+        } else {
+          showToast(e.response?.data?.detail || e.message, "error");
+        }
+      }
     }
     setLoading(false);
     return;
