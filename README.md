@@ -13,6 +13,7 @@ The overall purpose of the app is to be automating the process of summarizing PD
 -Educational Purposes: Students and educators can benefit from summarizing educational materials, making complex topics more accessible.
 
 -General Use: Anyone dealing with extensive textual content can simplify their reading and comprehension tasks using this app.
+### Showcase:
 
 [![Watch the video](/client/app/assets/img/videoIMG.png)](https://youtu.be/axxyIqzKgY0)
 
