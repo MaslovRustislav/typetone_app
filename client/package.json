@@ -8,7 +8,8 @@
     "dev": "remix dev --manual",
     "start": "remix-serve ./build/index.js",
     "typecheck": "tsc",
-    "format": "prettier --write \"app/**/*.+(ts|tsx|json|css|md)\""
+    "format": "prettier --write \"app/**/*.+(ts|tsx|json|css|md)\"",
+    "check-spell":"cspell lint \"app/**/*.ts \" \"app/**/*.tsx \" "
   },
   "dependencies": {
     "@remix-run/css-bundle": "^2.0.1",
@@ -27,6 +28,7 @@
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "autoprefixer": "^10.4.16",
+    "cspell": "^7.3.7",
     "eslint": "^8.50.0",
     "postcss": "^8.4.31",
     "prettier": "^3.0.3",

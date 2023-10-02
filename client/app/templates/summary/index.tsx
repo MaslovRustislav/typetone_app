@@ -3,8 +3,8 @@ import { SummaryContext } from "~/root";
 import type { FunctionComponent } from "react";
 
 import type { ISummaryProps } from "./types";
-import styleSummary from "~/common/styleSummaryt";
-import Loader from "~/common/loadert";
+import styleSummary from "~/common/styleSummary";
+import Loader from "~/common/loader";
 export const SummaryZone: FunctionComponent<ISummaryProps> = ({
   GPTSummary,
 }) => {

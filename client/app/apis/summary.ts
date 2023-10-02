@@ -4,7 +4,7 @@ const postFile = async (
   file: File,
   setGPTSummary: (value: string) => void,
   setLoading: (value: boolean) => void,
-  showToast: (vlaue: string, value: "success" | "error" | "info") => void,
+  showToast: (value: string, type: "success" | "error" | "info") => void
 ) => {
   setLoading(true);
   const formData = new FormData();

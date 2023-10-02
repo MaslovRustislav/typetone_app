@@ -2,11 +2,10 @@
 /client/tmp
 /client/out-tsc
 /client/build
-
 /client/node_modules
 /client/.cache
 /client/public/build
-/.vscode
 
+/.vscode
 /api/__pycache__
 /api/.env
