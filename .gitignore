@@ -2,7 +2,6 @@
 /client/tmp
 /client/out-tsc
 /client/build
-/client/
 
 /client/node_modules
 /client/.cache
