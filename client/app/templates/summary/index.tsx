@@ -5,7 +5,9 @@ import type { FunctionComponent } from "react";
 import type { ISummaryProps } from "./types";
 import styleSummary from "~/common/styleSummaryt";
 import Loader from "~/common/loadert";
-export const SummaryZone: FunctionComponent<ISummaryProps> = ({ GPTSummary }) => {
+export const SummaryZone: FunctionComponent<ISummaryProps> = ({
+  GPTSummary,
+}) => {
   const { loading } = useContext(SummaryContext);
   return (
     <div className="bg-white flex flex-col w-2/4  max_md:w-full p-4 space-y-6 justify-start rounded-xl h-full">
@@ -48,5 +50,3 @@ export const SummaryZone: FunctionComponent<ISummaryProps> = ({ GPTSummary }) =>
 };
 
 export default SummaryZone;
-
-

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import type { FunctionComponent } from "react";
 
-
 import { contentItems } from "./constant";
 const TemplatesMenu: FunctionComponent = () => {
   const [isOpenContent, setIsOpenContent] = useState<boolean>(true);
@@ -66,7 +65,9 @@ const TemplatesMenu: FunctionComponent = () => {
           contentItems.map((contentItem) => (
             <div className="transition-all space-y-1">
               <div className="rounded-lg cursor-pointer flex items-center py-1.5 pl-5 pr-6 space-x-2 text-neutral-900  transition-all duration-200    hover:bg-primary-50">
-                <div className="text-ellipsis overflow-hidden">{contentItem.name}</div>
+                <div className="text-ellipsis overflow-hidden">
+                  {contentItem.name}
+                </div>
               </div>
             </div>
           ))}

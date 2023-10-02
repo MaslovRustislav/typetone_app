@@ -1,6 +1,13 @@
 import { createContext, useState } from "react";
 import type { LinksFunction } from "@remix-run/node";
-import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
+import {
+  Links,
+  LiveReload,
+  Meta,
+  Outlet,
+  Scripts,
+  ScrollRestoration,
+} from "@remix-run/react";
 
 import stylesheet from "~/tailwind.css";
 import Header from "./header";
@@ -9,7 +16,9 @@ export const SummaryContext = createContext<IContextTypes>({
   loading: false,
   setLoading: (value: boolean): void => {},
 });
-export const links: LinksFunction = () => [{ rel: "stylesheet", href: stylesheet }];
+export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: stylesheet },
+];
 export default function App() {
   const [loading, setLoading] = useState<boolean>(false);
   const context: IContextTypes = { loading, setLoading };
